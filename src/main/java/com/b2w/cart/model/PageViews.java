@@ -36,6 +36,11 @@ public class PageViews implements Serializable {
 	public void setProduct(String product) {
 		this.product = product;
 	}
+	@Override
+	public String toString() {
+		return "PageViews [timestamp=" + timestamp + ", customer=" + customer + ", page=" + page + ", product="
+				+ product + "]";
+	}
 	
 	
 }
