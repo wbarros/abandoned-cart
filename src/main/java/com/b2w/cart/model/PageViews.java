@@ -1,6 +1,7 @@
 package com.b2w.cart.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class PageViews implements Serializable {
 	
@@ -8,14 +9,15 @@ public class PageViews implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String timestamp;
+	private Date timestamp;
 	private String customer;
 	private String page;
 	private String product;
-	public String getTimestamp() {
+	
+	public Date getTimestamp() {
 		return timestamp;
 	}
-	public void setTimestamp(String timestamp) {
+	public void setTimestamp(Date timestamp) {
 		this.timestamp = timestamp;
 	}
 	public String getCustomer() {
